@@ -1,7 +1,6 @@
 .main {
   margin: 0;
   padding: 0;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,6 +8,26 @@
 }
 
 .title {
-  align-self: start;
+  margin: 40px 0 10px 0;
+  width: 100%;
+}
+
+.subtitle {
+  margin: 10px 0;
+  width: 100%;
+  font-style: italic;
+}
+
+.description {
   margin: 0;
+}
+
+.project {
+  width: 100%;
+}
+
+.contact {
+  list-style-type: none;
+  padding: 0;
+  align-self: flex-start;
 }

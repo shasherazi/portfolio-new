@@ -17,6 +17,10 @@ a:hover {
   text-decoration: underline;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
