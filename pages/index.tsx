@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Nav from "../src/Nav";
+import { playfairDisplay } from "../src/fonts";
 
 export default function Home() {
   return (
@@ -11,8 +12,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Nav />
-      <main className={styles.main}>
-        <h1 className={styles.title}>
+      <main className={`${styles.main} ${playfairDisplay.className}`}>
+        <h1 className={`${styles.title} ${styles.shasherazi}`}>
           <a href="https://github.com/shasherazi" target="_blank">
             shasherazi
           </a>
