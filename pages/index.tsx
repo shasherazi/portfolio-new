@@ -66,7 +66,7 @@ export default function Home() {
             on twitter
           </li>
           <li className={styles.contactItem}>
-            <a href="https://gituhb.com/shasherazi" target="_blank">
+            <a href="https://github.com/shasherazi" target="_blank">
               shasherazi
             </a>{" "}
             on github
