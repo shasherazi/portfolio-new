@@ -11,7 +11,7 @@ function App() {
           im shasherazi, a 20 year old{" "}
           <a
             href="https://en.wikipedia.org/wiki/Pakistan"
-            className="hover:underline font-playfair font-normal italic"
+            className="font-playfair font-normal italic hover:underline"
           >
             pakistani
           </a>{" "}
