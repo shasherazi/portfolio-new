@@ -49,7 +49,7 @@ function Main() {
             </a>
             <TechDetailsPopup name="react" icon={<FaReact />} />
             <TechDetailsPopup name="python" icon={<FaPython />} />
-            <TechDetailsPopup name="react" icon={<SiFirebase />} />
+            <TechDetailsPopup name="firebase" icon={<SiFirebase />} />
           </h3>
           <p className="font-inter font-light ">
             a website where anyone can add any song to a playlist anyone can see
