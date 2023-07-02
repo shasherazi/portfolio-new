@@ -1,7 +1,5 @@
 import { SiGnubash, SiFirebase } from "react-icons/si";
 import { FaReact, FaPython } from "react-icons/fa";
-import { useEffect, useState } from "react";
-import TechDetails from "./TechDetails";
 import TechDetailsPopup from "./TechDetailPopup";
 
 function Main() {
