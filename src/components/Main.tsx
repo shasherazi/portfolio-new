@@ -5,11 +5,11 @@ import {
   SiTailwindcss,
 } from "react-icons/si";
 import { FaReact, FaPython } from "react-icons/fa";
-import TechDetailsPopup from "./TechDetailPopup";
+import Project from "./Project";
 
 function Main() {
   return (
-    <main className="mx-[10%] text-white md:mx-[20%] my-8">
+    <main className="mx-[10%] my-8 text-white md:mx-[20%]">
       <h1 className="main-heading mb-5 font-playfair text-3xl font-bold ">
         shasherazi
       </h1>
@@ -30,53 +30,30 @@ function Main() {
         <h2 className="mb-5 mt-10 font-playfair text-2xl font-bold ">
           projects
         </h2>
-        <div className="dotfiles my-5">
-          <h3>
-            <a
-              href="https://github.com/shasherazi/dotfiles"
-              className="font-playfair font-bold italic  hover:underline"
-            >
-              dotfiles
-            </a>
-            <TechDetailsPopup name="bash" icon={<SiGnubash />} />
-            <p className="font-inter font-light ">
-              my dotfiles for my arch linux setup
-            </p>
-          </h3>
-        </div>
-        <div className="global-playlist my-5">
-          <h3>
-            <a
-              href="https://global-playlist.vercel.app/"
-              className="font-playfair font-bold italic  hover:underline"
-            >
-              globalPlaylist
-            </a>
-            <TechDetailsPopup name="react" icon={<FaReact />} />
-            <TechDetailsPopup name="python" icon={<FaPython />} />
-            <TechDetailsPopup name="firebase" icon={<SiFirebase />} />
-          </h3>
-          <p className="font-inter font-light ">
-            a website where anyone can add any song to a playlist anyone can see
-            and listen to
-          </p>
-        </div>
-        <div className="budgget my-5">
-          <h3>
-            <a
-              href="https://budget-app-te60.onrender.com/"
-              className="font-playfair font-bold italic  hover:underline"
-            >
-              budgget app{" "}
-            </a>
-            <TechDetailsPopup name="ruby on rails" icon={<SiRubyonrails />} />
-            <TechDetailsPopup name="tailwind css" icon={<SiTailwindcss />} />
-          </h3>
-          <p className="font-inter font-light ">
-            a website where you can add your expenses across different
-            categories
-          </p>
-        </div>
+
+        <Project
+          name="dotfiles"
+          description="my dotfiles for my arch linux setup"
+          techStack={["bash"]}
+          techStackIcons={[<SiGnubash />]}
+          link="https://github.com/shasherazi/dotfiles"
+        />
+
+        <Project
+          name="globalPlaylist"
+          description="a website where anyone can add any song to a playlist anyone can see and listen to"
+          techStack={["react", "python", "firebase"]}
+          techStackIcons={[<FaReact />, <FaPython />, <SiFirebase />]}
+          link="https://global-playlist.vercel.app/"
+        />
+
+        <Project
+          name="budgget app"
+          description="a website where you can add your expenses across different categories"
+          techStack={["ruby on rails", "tailwind css"]}
+          techStackIcons={[<SiRubyonrails />, <SiTailwindcss />]}
+          link="https://budget-app-te60.onrender.com/"
+        />
       </div>
       <div className="contact">
         <h2 className="mb-5 mt-10 font-playfair text-2xl font-bold ">
