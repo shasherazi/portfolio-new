@@ -1,10 +1,15 @@
-import { SiGnubash, SiFirebase } from "react-icons/si";
+import {
+  SiGnubash,
+  SiFirebase,
+  SiRubyonrails,
+  SiTailwindcss,
+} from "react-icons/si";
 import { FaReact, FaPython } from "react-icons/fa";
 import TechDetailsPopup from "./TechDetailPopup";
 
 function Main() {
   return (
-    <main className="mx-[10%] text-white md:mx-[20%]">
+    <main className="mx-[10%] text-white md:mx-[20%] my-8">
       <h1 className="main-heading mb-5 font-playfair text-3xl font-bold ">
         shasherazi
       </h1>
@@ -54,6 +59,22 @@ function Main() {
           <p className="font-inter font-light ">
             a website where anyone can add any song to a playlist anyone can see
             and listen to
+          </p>
+        </div>
+        <div className="budgget my-5">
+          <h3>
+            <a
+              href="https://budget-app-te60.onrender.com/"
+              className="font-playfair font-bold italic  hover:underline"
+            >
+              budgget app{" "}
+            </a>
+            <TechDetailsPopup name="ruby on rails" icon={<SiRubyonrails />} />
+            <TechDetailsPopup name="tailwind css" icon={<SiTailwindcss />} />
+          </h3>
+          <p className="font-inter font-light ">
+            a website where you can add your expenses across different
+            categories
           </p>
         </div>
       </div>
