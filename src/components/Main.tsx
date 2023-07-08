@@ -26,9 +26,15 @@ function Main() {
         learning new things.
       </p>
 
-      <div className="projects">
+      <div className="projects relative">
         <h2 className="mb-5 mt-10 font-playfair text-2xl font-bold ">
           projects
+        </h2>
+
+        <h2 className="mt-2 font-inter font-extralight absolute top-0 right-0">
+          <a href="/projects" className="font-inter hover:underline">
+            view all projects
+          </a>
         </h2>
 
         <Project
