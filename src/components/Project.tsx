@@ -25,7 +25,11 @@ function Project({
           {name}
         </a>
         {techStack.map((tech, index) => (
-          <TechDetailsPopup name={tech} icon={techStackIcons[index]} />
+          <TechDetailsPopup
+            name={tech}
+            icon={techStackIcons[index]}
+            key={tech}
+          />
         ))}
       </h3>
       <p className="font-inter font-light ">{description}</p>

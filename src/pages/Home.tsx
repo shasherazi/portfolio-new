@@ -5,9 +5,9 @@ import {
   SiTailwindcss,
 } from "react-icons/si";
 import { FaReact, FaPython } from "react-icons/fa";
-import Project from "./Project";
+import Project from "../components/Project";
 
-function Main() {
+function Home() {
   return (
     <main className="mx-[10%] my-8 text-white md:mx-[20%]">
       <h1 className="main-heading mb-5 font-playfair text-3xl font-bold ">
@@ -99,4 +99,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default Home;

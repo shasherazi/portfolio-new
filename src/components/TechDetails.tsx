@@ -8,10 +8,6 @@ interface TechDetailsProps {
 }
 
 function TechDetails({ name, visible, x, y }: TechDetailsProps) {
-  useEffect(() => {
-    console.log(x, y);
-  }, [x, y]);
-
   const position = {
     top: `calc(${y}px - 25px)`,
     left: `calc(${x}px + 2px)`,
@@ -22,7 +18,7 @@ function TechDetails({ name, visible, x, y }: TechDetailsProps) {
       className={`bg-black
                   text-white
                   ${visible ? "block" : "hidden"}
-                  absolute
+                  fixed
       `}
       style={position}
     >
