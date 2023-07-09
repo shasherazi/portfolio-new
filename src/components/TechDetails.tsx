@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-
 interface TechDetailsProps {
   name: string;
   visible?: boolean;
