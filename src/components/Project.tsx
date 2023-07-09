@@ -4,7 +4,7 @@ interface ProjectProps {
   name: string;
   description: string;
   techStack: string[];
-  techStackIcons: any[];
+  techStackIcons: React.JSX.Element[];
   link: string;
 }
 
