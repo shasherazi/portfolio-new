@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Project from "../components/Project";
 import projects from "../data/projects.json";
 
@@ -26,9 +27,9 @@ function Home() {
         </h2>
 
         <h2 className="absolute right-0 top-0 mt-2 font-inter font-extralight">
-          <a href="/projects" className="font-inter hover:underline">
+          <Link to="/projects" className="font-inter hover:underline">
             view all projects
-          </a>
+          </Link>
         </h2>
 
         {projects.map((project) => (
