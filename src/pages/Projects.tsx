@@ -2,21 +2,25 @@ import projects from "../data/projects.json";
 
 function Projects() {
   return (
-    <div className="projects text-white">
-      <h1 className="my-10 text-center font-playfair text-3xl font-bold">
+    <div className="projects text-white my-10">
+      <h1 className="mb-10 text-center font-playfair text-3xl font-bold">
         Projects
       </h1>
 
-      <div className="projects mx-20">
+      <div className="projects mx-10 md:mx-20">
         <ul className="projects-list flex flex-col items-center gap-5">
           {projects.map((project) => (
             <li
               key={project.id}
-              className="project flex justify-between gap-10"
+              className="project flex flex-col-reverse justify-between gap-10 md:flex-row"
             >
-              <div className="project-info my-5 flex flex-1 flex-col gap-2">
+              <div className="project-info md:my-5 flex flex-1 flex-col gap-2">
                 <h2 className="project-title font-playfair text-xl font-medium italic">
-                  <a href={project.link} className="hover:underline" target="_blank">
+                  <a
+                    href={project.link}
+                    className="hover:underline"
+                    target="_blank"
+                  >
                     {project.name}
                   </a>
                 </h2>
@@ -30,7 +34,7 @@ function Projects() {
                   ))}
                 </ul>
               </div>
-              <div className="project-image h-auto w-1/2 flex-1">
+              <div className="project-image h-auto md:w-1/2 flex-1">
                 <a href={project.link} target="_blank">
                   <img src={project.image} alt={project.name} />
                 </a>
