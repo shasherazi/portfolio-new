@@ -19,7 +19,7 @@ function Nav() {
               {isOpen ? <GrClose /> : <FiMenu />}
             </button>
             <div className={`ham-menu-items ${isOpen ? "visible" : "hidden"}`}>
-              <ul className="mb-2 ml-2 mr-10 mt-10 flex flex-col text-3xl font-light">
+              <ul className="mb-4 ml-4 mr-10 mt-10 flex flex-col text-3xl font-light gap-1">
                 <li
                   className={`${
                     location.pathname === "/"
