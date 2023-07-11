@@ -1,10 +1,27 @@
+import {
+  SiFirebase,
+  SiGnubash,
+  SiRubyonrails,
+  SiTailwindcss,
+} from "react-icons/si";
 import TechDetailsPopup from "./TechDetailPopup";
+import { IconType } from "react-icons";
+import { FaPython, FaReact } from "react-icons/fa";
+
+const iconComponents: { [key: string]: IconType } = {
+  SiGnubash,
+  SiFirebase,
+  SiRubyonrails,
+  SiTailwindcss,
+  FaReact,
+  FaPython,
+};
 
 interface ProjectProps {
   name: string;
   description: string;
   techStack: string[];
-  techStackIcons: React.JSX.Element[];
+  techStackIcons: string[];
   link: string;
 }
 
@@ -24,13 +41,10 @@ function Project({
         >
           {name}
         </a>
-        {techStack.map((tech, index) => (
-          <TechDetailsPopup
-            name={tech}
-            icon={techStackIcons[index]}
-            key={tech}
-          />
-        ))}
+        {techStack.map((tech, index) => {
+          const Icon = iconComponents[techStackIcons[index]];
+          return <TechDetailsPopup name={tech} icon={<Icon />} key={tech} />;
+        })}
       </h3>
       <p className="font-inter font-light ">{description}</p>
     </div>

@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "dotfiles",
+    "description": "my dotfiles for my arch linux setup",
+    "techStack": [
+      "bash"
+    ],
+    "techStackIcons": [
+      "SiGnubash"
+    ],
+    "link": "https://github.com/shasherazi/dotfiles"
+  },
+  {
+    "id": 2,
+    "name": "globalPlaylist",
+    "description": "a website where anyone can add any song to a playlist anyone can see and listen to",
+    "techStack": [
+      "react",
+      "python",
+      "firebase"
+    ],
+    "techStackIcons": [
+      "FaReact",
+      "FaPython",
+      "SiFirebase"
+    ],
+    "link": "https://global-playlist.vercel.app/"
+  },
+  {
+    "id": 3,
+    "name": "budgget app",
+    "description": "a website where you can add your expenses across different categories",
+    "techStack": [
+      "ruby on rails",
+      "tailwind css"
+    ],
+    "techStackIcons": [
+      "SiRubyonrails",
+      "SiTailwindcss"
+    ],
+    "link": "https://budget-app-te60.onrender.com/"
+  }
+]

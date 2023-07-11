@@ -1,11 +1,5 @@
-import {
-  SiGnubash,
-  SiFirebase,
-  SiRubyonrails,
-  SiTailwindcss,
-} from "react-icons/si";
-import { FaReact, FaPython } from "react-icons/fa";
 import Project from "../components/Project";
+import projects from "../data/projects.json";
 
 function Home() {
   return (
@@ -31,35 +25,22 @@ function Home() {
           projects
         </h2>
 
-        <h2 className="mt-2 font-inter font-extralight absolute top-0 right-0">
+        <h2 className="absolute right-0 top-0 mt-2 font-inter font-extralight">
           <a href="/projects" className="font-inter hover:underline">
             view all projects
           </a>
         </h2>
 
-        <Project
-          name="dotfiles"
-          description="my dotfiles for my arch linux setup"
-          techStack={["bash"]}
-          techStackIcons={[<SiGnubash />]}
-          link="https://github.com/shasherazi/dotfiles"
-        />
-
-        <Project
-          name="globalPlaylist"
-          description="a website where anyone can add any song to a playlist anyone can see and listen to"
-          techStack={["react", "python", "firebase"]}
-          techStackIcons={[<FaReact />, <FaPython />, <SiFirebase />]}
-          link="https://global-playlist.vercel.app/"
-        />
-
-        <Project
-          name="budgget app"
-          description="a website where you can add your expenses across different categories"
-          techStack={["ruby on rails", "tailwind css"]}
-          techStackIcons={[<SiRubyonrails />, <SiTailwindcss />]}
-          link="https://budget-app-te60.onrender.com/"
-        />
+        {projects.map((project) => (
+          <Project
+            name={project.name}
+            description={project.description}
+            techStack={project.techStack}
+            techStackIcons={project.techStackIcons}
+            link={project.link}
+            key={project.id}
+          />
+        ))}
       </div>
       <div className="contact">
         <h2 className="mb-5 mt-10 font-playfair text-2xl font-bold ">
