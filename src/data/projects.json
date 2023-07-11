@@ -3,42 +3,27 @@
     "id": 1,
     "name": "dotfiles",
     "description": "my dotfiles for my arch linux setup",
-    "techStack": [
-      "bash"
-    ],
-    "techStackIcons": [
-      "SiGnubash"
-    ],
-    "link": "https://github.com/shasherazi/dotfiles"
+    "techStack": ["bash"],
+    "techStackIcons": ["SiGnubash"],
+    "link": "https://github.com/shasherazi/dotfiles",
+    "image": "https://raw.githubusercontent.com/shasherazi/portfolio-new/main/src/assets/projectImages/dotfiles.png"
   },
   {
     "id": 2,
     "name": "globalPlaylist",
     "description": "a website where anyone can add any song to a playlist anyone can see and listen to",
-    "techStack": [
-      "react",
-      "python",
-      "firebase"
-    ],
-    "techStackIcons": [
-      "FaReact",
-      "FaPython",
-      "SiFirebase"
-    ],
-    "link": "https://global-playlist.vercel.app/"
+    "techStack": ["react", "python", "firebase"],
+    "techStackIcons": ["FaReact", "FaPython", "SiFirebase"],
+    "link": "https://global-playlist.vercel.app/",
+    "image": "https://raw.githubusercontent.com/shasherazi/portfolio-new/main/src/assets/projectImages/globalPlaylist.png"
   },
   {
     "id": 3,
     "name": "budgget app",
     "description": "a website where you can add your expenses across different categories",
-    "techStack": [
-      "ruby on rails",
-      "tailwind css"
-    ],
-    "techStackIcons": [
-      "SiRubyonrails",
-      "SiTailwindcss"
-    ],
-    "link": "https://budget-app-te60.onrender.com/"
+    "techStack": ["ruby on rails", "tailwind css"],
+    "techStackIcons": ["SiRubyonrails", "SiTailwindcss"],
+    "link": "https://budget-app-te60.onrender.com/",
+    "image": "https://raw.githubusercontent.com/shasherazi/portfolio-new/e2df63db8dc8989ca94d7c3920ac8b0f9a66d6a9/src/assets/projectImages/budgget-app.png"
   }
 ]
