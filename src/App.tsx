@@ -3,6 +3,8 @@ import "./App.css";
 import Home from "./pages/Home";
 import Four0four from "./pages/Four0four";
 import { useEffect } from "react";
+import Projects from "./pages/Projects";
+import Nav from "./components/Nav";
 
 function App() {
   useEffect(() => {
@@ -38,8 +40,11 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="*" element={<Four0four />} />
+      <Route path="/" element={<Nav />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="*" element={<Four0four />} />
+      </Route>
     </Routes>
   );
 }
