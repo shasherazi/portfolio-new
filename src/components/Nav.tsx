@@ -1,10 +1,11 @@
 import { useState } from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useLocation } from "react-router-dom";
 import { FiMenu } from "react-icons/fi";
 import { GrClose } from "react-icons/gr";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
   return (
     <>
@@ -18,13 +19,25 @@ function Nav() {
               {isOpen ? <GrClose /> : <FiMenu />}
             </button>
             <div className={`ham-menu-items ${isOpen ? "visible" : "hidden"}`}>
-              <ul className="mb-2 ml-2 mr-10 mt-10 flex flex-col text-3xl">
-                <li className="hover:underline">
+              <ul className="mb-2 ml-2 mr-10 mt-10 flex flex-col text-3xl font-light">
+                <li
+                  className={`${
+                    location.pathname === "/"
+                      ? "font-playfair italic underline"
+                      : "hover:underline"
+                  }`}
+                >
                   <Link to="/" onClick={() => setIsOpen(false)}>
                     Home
                   </Link>
                 </li>
-                <li className="hover:underline">
+                <li
+                  className={`${
+                    location.pathname === "/projects"
+                      ? "font-playfair italic underline"
+                      : "hover:underline"
+                  }`}
+                >
                   <Link to="/projects" onClick={() => setIsOpen(false)}>
                     Projects
                   </Link>
