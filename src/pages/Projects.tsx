@@ -12,7 +12,7 @@ function Projects() {
           {projects.map((project) => (
             <li
               key={project.id}
-              className="project flex flex-col-reverse justify-between gap-10 md:flex-row"
+              className="project flex flex-col-reverse justify-between gap-5 md:gap-10 md:flex-row mb-20 last:mb-0"
             >
               <div className="project-info md:my-5 flex flex-1 flex-col gap-2">
                 <h2 className="project-title font-playfair text-xl font-medium italic">
